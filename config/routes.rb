@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'profile/show'
+  mount Thredded::Engine => '/forum'
 
   # Set root to be the Thredded forums index page at /forum
   root to: 'thredded/messageboards#index'
